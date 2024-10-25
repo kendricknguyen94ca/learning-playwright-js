@@ -37,20 +37,4 @@ test('Customized Browser Context Define',async ({browser}) => {
     // Print page title
     const pageTitle = await page.title();
     console.log(pageTitle);
-
-    // Using cssSelector get webElement and interact
-    // Id -> tagname#id or #id
-    // Class -> tagname.className or .className
-    // Traversing from Parent to Child -> parentTagName childTagName
-    // Retrive css by text -> text=''
-
-    // Enter to text field
-    // Note: In newest Playwright versions, Playwright recommend user to use fill() method
-    //  instead of type() to enter input to text field
-    // Enter username & password
-    await page.locator('#username').fill('rahulshettyacademy');
-    await page.locator("[type='password']").fill('learning');
-    
-    // Click button
-    await page.locator('#signInBtn').click();
 }) 
