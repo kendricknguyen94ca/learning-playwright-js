@@ -3,7 +3,7 @@ const { test, expect } = require("@playwright/test");
 // Learning Points:
     // Techniques to wait dynamically for new page in Service based applications
 
-test('Techniques to wait dynamically for new page in Service based applications',async ({page}) => {
+test('sec4-l15-Techniques to wait dynamically for new page in Service based applications',async ({page}) => {
     // Open web url https://rahulshettyacademy.com/client/auth/login
     await page.goto('https://rahulshettyacademy.com/client/');
     await page.locator("#userEmail").fill("khoanguyen@yopmail.com");

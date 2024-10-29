@@ -6,7 +6,7 @@ const { test, expect } = require("@playwright/test");
         // - click() -> Click to a button
         // - 
 
-test('Basic methods for Web Automating testing',async ({page}) => {
+test('sec4-l11-to-t14 Basic methods for Web Automating testing',async ({page}) => {
     // Open web url https://rahulshettyacademy.com/loginpagePractise/
     await page.goto('https://rahulshettyacademy.com/loginpagePractise/');
 
