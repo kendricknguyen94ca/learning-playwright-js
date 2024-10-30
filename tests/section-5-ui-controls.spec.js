@@ -41,7 +41,7 @@ test('sec5-l17tol19-UI Controls',async ({page}) => {
     await page.pause();
 })
 
-test.only('sec5-l20-Child Window Handling',async ({browser}) => {
+test('sec5-l20-Child Window Handling',async ({browser}) => {
     const context = await browser.newContext();
     const page = await context.newPage();
     await page.goto('https://rahulshettyacademy.com/loginpagePractise/');
