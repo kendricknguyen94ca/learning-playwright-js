@@ -36,9 +36,6 @@ test('sec5-l17tol19-UI Controls',async ({page}) => {
     // Validate attribute
     const documentRequestLink = page.locator("[href*='documents-request']");
     await expect(documentRequestLink).toHaveAttribute("class", "blinkingText");
-
-    // Pause current page
-    await page.pause();
 })
 
 test('sec5-l20-Child Window Handling',async ({browser}) => {
@@ -56,7 +53,4 @@ test('sec5-l20-Child Window Handling',async ({browser}) => {
     ]); // Create a newPage handle
     const newPageTitle = await newPage.locator("h1").textContent();
     expect(newPageTitle).toEqual("Documents request");
-
-    // Pause current page
-    await page.pause();
 })
